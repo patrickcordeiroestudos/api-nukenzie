@@ -23,7 +23,7 @@ class Budget {
   @UpdateDateColumn()
   updated_at!: Date;
 
-  @Column()
+  @Column({ default: true })
   is_active!: boolean;
 }
 
